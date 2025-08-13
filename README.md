@@ -49,6 +49,12 @@ pip install -r requirements.txt
 # Additional dependency for Jupyter
 pip install notebook
 
+# Launch Jupyter notebook
+jupyter notebook
+
+# Open and run:
+notebooks/Vision_AI_in_5_Days.ipynb
+
 
 # File structure
 Vision-AI-Project/
