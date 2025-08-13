@@ -1,0 +1,22 @@
+# In your Colab notebook
+from scripts.data_loader import load_cifar10, get_class_names
+from scripts.model_builder import create_cnn_model
+from scripts.evaluator import plot_history, generate_confusion_matrix
+
+# Load data
+(x_train, y_train), (x_test, y_test) = load_cifar10()
+class_names = get_class_names()
+
+# Build model
+model = create_cnn_model()
+
+# Train
+history = model.fit(x_train, y_train, epochs=10, validation_split=0.2)
+
+# Evaluate
+plot_history(history, 'training_history.png')
+y_pred = model.predict(x_test)
+report = generate_confusion_matrix(y_test.flatten(), 
+                                  np.argmax(y_pred, axis=1), 
+                                  class_names, 
+                                  'confusion_matrix.png')
