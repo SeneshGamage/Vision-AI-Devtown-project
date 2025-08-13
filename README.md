@@ -48,3 +48,26 @@ pip install -r requirements.txt
 
 # Additional dependency for Jupyter
 pip install notebook
+
+
+# File structure
+Vision-AI-Project/
+├── notebooks/               # Main implementation notebook
+├── models/                  # Trained models (.keras format)
+│   ├── basic_cnn_cifar10.keras
+│   ├── augmented_cnn_cifar10.keras
+│   └── mobilenetv2_cifar10.keras
+├── assets/                  # Visualizations
+│   ├── training_history.png
+│   ├── confusion_matrix.png
+│   ├── model_comparison.png
+│   └── sample_predictions.png
+├── scripts/                 # Reusable modules
+│   ├── data_loader.py
+│   ├── model_builder.py
+│   ├── transfer_learning.py
+│   └── evaluator.py
+├── results/                 # Sample predictions
+│   └── sample_predictions.csv
+├── requirements.txt         # Dependencies
+└── README.md                # Project documentation

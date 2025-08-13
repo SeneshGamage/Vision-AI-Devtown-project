@@ -1,0 +1,6 @@
+image_id,true_class,predicted_class,confidence,is_correct,correct_class
+42,bird,bird,0.9789,True,
+17,cat,dog,0.7623,False,cat
+89,automobile,automobile,0.9912,True,
+5,deer,horse,0.6541,False,deer
+33,ship,ship,0.8876,True,
